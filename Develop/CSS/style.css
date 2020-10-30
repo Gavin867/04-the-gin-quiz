@@ -1,1 +1,9 @@
 /* "[Websites] should be more pretty, [Websites] should be more witty..." */
+
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
