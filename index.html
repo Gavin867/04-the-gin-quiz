@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <link rel="stylesheet/text" href="./Develop/CSS/style.css">
     <title>My Quiz</title>
 </head>
+
 <body>
-    
+
     <div>
         <!--Nav bar-->
     </div>
+
+    <button>Start</button>
 
     <div id="question">
         <div class="question">
@@ -22,18 +26,27 @@
         </div>
 
         <div class="question active">
-            
         </div>
+    </div>
 
+    <!--Put your initials in this div-->
+    <div id="store-your-score">
+        <h2>Congratulations you have finished!</h2>
 
+        <p>Your score is: <span id="player-score"></span></p>
+
+        <form> 
+            <p>Enter your initials here: <input id="initials-form" type="text" max="3"></p>
+            
+            <!--This button actually saves the high score/setItems-->
+            <button id="sbmt-int-btn">Submit</button>
+        </form>
 
     </div>
+
 
     
-    </div>
-
-    <button>Start</button>
-
-    <script src="./Develop/JS/script.js"></script>
+    <script src="./Develop/JS/gamelogic.js"></script>
 </body>
+
 </html>
