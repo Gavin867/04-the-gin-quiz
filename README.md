@@ -1,4 +1,4 @@
-# my-quiz
+# the-gin-quiz
 Multiple choice quiz intended to be an exercise in JavaScript actions. 
 
 # 04 Web APIs: Code Quiz
