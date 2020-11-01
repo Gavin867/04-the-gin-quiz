@@ -15,14 +15,14 @@ var practiceScore = 75
 
 
 
-var submitScoreBtn=document.getElementById("sbmt-int-btn");
+var submitScoreBtn=document.getElementById("submitInitials");
 
 function savePlayerScoreInitials(event) {
     event.preventDefault ();
 
     console.log("button-click");
 
-    var playerInitials=document.getElementById("initials-form");
+    var playerInitials=document.getElementById("initialsForm");
     
     console.log(playerInitials.value);
 

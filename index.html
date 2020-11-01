@@ -22,6 +22,7 @@
         <!-- Participants are presented with a welcome page and instructions upon entering the webpage -->
         <section>
             <div class="container">
+
                 <h1 class="big-heading">Welcome to the Gin Quiz</h1>
 
                 <h2 class="small-heading">~ Tally Ho! ~</h2>
@@ -47,29 +48,39 @@
 
         <!-- Once the start button is click the gamelogic.js renders questions and answers -->
         <section id="the-quiz" class="hide">
+
             <div id="question"></div>
+
             <div id="possible-answers">
-                <button id="answer-a"></button>
-                <button id="answer-b"></button>
-                <button id="answer-c"></button>
-                <button id="answer-d"></button>
+                
+                <button id="answerA" class="quiz-question">a.</button>
+
+                <button id="answerB" class="quiz-question">b.</button>
+                
+                <button id="answerC" class="quiz-question">c.</button>
+                
+                <button id="answerD" class="quiz-question">d.</button>
+            
             </div>
 
-            <div class="question-active">
+            <div id="answer-response">
+                <h3 id="correct" class="hide">~ Huzzah! ~</h3>
+                <h3 id="incorrect" class="hide">~ Balderdash! ~</h3>
             </div>
         </section>
 
         <!--Put your initials in this section-->
         <section id="store-your-score" class="hide">
-            <h2>Congratulations you have finished!</h2>
+
+            <h2>By Jove, you've done it! Absolutely spiffing, old chap!</h2>
 
             <p>Your score is: <span id="player-score"></span></p>
 
             <form>
-                <p>Enter your initials here: <input id="initials-form" type="text" max="3"></p>
+                <p>Inscribe monogram: <input id="initialsForm" type="text" max="3"></p>
 
                 <!--This button actually saves the high score/setItems-->
-                <button id="sbmt-int-btn" class="button">Submit</button>
+                <button id="submitInitials" class="button">Submit</button>
             </form>
         </section>
     </main>
