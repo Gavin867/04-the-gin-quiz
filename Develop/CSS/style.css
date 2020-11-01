@@ -12,7 +12,7 @@ body {
 }
 
 img {
-    height: 400px;
+    height: 300px;
     width: auto;
     border-style: solid;
     border-color: #3D034A;
@@ -20,7 +20,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    margin-top: .5%;
 }
 
 /* Classes in Alphabetical Order */
@@ -28,15 +28,17 @@ img {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
+    height: 60px;
     padding: 1% 5%;
     background-color: #3D034A;
     align-items: center;
+    border-bottom: 5px solid #563A73;
+    font-size: 20pt;
 }
 
 .big-heading {
     display: flex;
-    padding-top: .5%;
+    padding-top: .1%;
     padding-bottom: .5%;
     font-weight: bolder;
     font-size: 36pt;
@@ -51,10 +53,25 @@ img {
 .button {
     background-color: #563A73;
     color: whitesmoke;
+    font-size: 20pt;
     height: fit-content;
     padding: .5em;
     font-weight: bold;
     border-radius: 5%;
+}
+
+.container {
+    display: block;
+    background-color: whitesmoke;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 1%;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: .5%;
+    padding: .5%;
+    border-radius: 5%;
+    border: solid #3D034A;
 }
 
 .hide {
@@ -65,7 +82,7 @@ img {
     background-color: #563A73;
     color: whitesmoke;
     height: fit-content;
-    padding: .25em;
+    padding: .1em;
     font-weight: bold;
     border-radius: 5%;
     text-decoration: none;
@@ -74,8 +91,8 @@ img {
 
 .text {
     display: block;
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 7%;
+    padding-right: 7%;
     padding-bottom: 1%;
     font-size: 16pt;
     font-weight: bold;
@@ -98,7 +115,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-bottom: .5%;
+    padding-bottom: .25%;
 }
 
 /* ID's in Alphabetical Order */
@@ -112,4 +129,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
