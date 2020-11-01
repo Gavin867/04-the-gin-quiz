@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="reset" href="./Develop/CSS/reset.css">
-    <link type="style" href="./Develop/CSS/style.css">
-    <title>Document</title>
+    <link href="./Develop/CSS/reset.css" rel="stylesheet" type="text/css">
+    <link href="./Develop/CSS/style.css" rel="stylesheet" type="text/css">
+    <title>Gin Champions!</title>
 </head>
 <body>
+    <header class="bar">
+        <a href="./index.html" id="start-over-link" class="looks-like-button"> Play again! </a>
+
+        <div id="stop-clock" class="looks-like-button">Time Remaining:<span id="timeLeft">0</span></div>
+    </header>
+    
     <Div>
-        <H1>High Scores!</H1>
+        <h1>High Scores!</h1>
 
         <Ul id="list-scores"></Ul>
-
-        <a href="./index.html"> Play again! </a>
         
         <button id="clear-score-board"> Clear All Scores </button>
     </Div>
