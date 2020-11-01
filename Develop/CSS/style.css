@@ -10,6 +10,10 @@ body {
     background-color: #a7e8ec ;
 }
 
+.hide {
+    display: none;
+}
+
 .button {
     background-color: #563A73;
     color: whitesmoke;
@@ -27,6 +31,13 @@ body {
     font-weight: bold;
     border-radius: 5%;
     text-decoration: none;
+    vertical-align: middle;
+}
+
+.timer-style {
+    color: whitesmoke;
+    padding: .25em;
+    font-weight: bold;
     vertical-align: middle;
 }
 
@@ -65,7 +76,7 @@ body {
     padding-bottom: .5%;
 }
 
-.instructions {
+.text {
     display: block;
     padding-left: 18%;
     padding-right: 18%;
