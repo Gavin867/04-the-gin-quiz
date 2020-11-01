@@ -11,7 +11,7 @@
 
 <body>
     <header class="bar">
-        <!-- Navgation Link to the high score page-->
+        <!-- Navgation Link to the high score page -->
         <a href="./highscorepage.html" class="looks-like-button">View High Scores</a>
 
         <!-- The countdoung timer, in seconds -->
@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        <!-- Participants are created with a welcome page and instructions upon entering the webpage -->
+        <!-- Participants are presented with a welcome page and instructions upon entering the webpage -->
         <section>
             <div>
                 <h1 class="big-heading"> ~~ Welcome to the Gin Quiz!!! ~~ </h1>
@@ -27,7 +27,7 @@
                 <h2 class="small-heading">~ Tally Ho! ~</h2>
 
                 <p class="text"> 
-                    In this quiz we will test your knowledge of Her Majesty Queen Elizbeth II's favourite spirit.
+                    This challenge will test your knowledge of Her Majesty Queen Elizbeth II's favourite spirit!
                 </p>    
 
                 <p class="text">    
@@ -45,6 +45,7 @@
             <img src="./Assets/Gin O'Clock.png" alt="It's gin o'clock! God save the Queen!">
         </section>
 
+        <!-- Once the start button is click the gamelogic.js renders questions and answers -->
         <section id="the-quiz" class="hide">
             <div id="question"></div>
             <div id="possible-answers">
@@ -73,7 +74,7 @@
         </section>
     </main>
 
-
+    <!-- The js code for the index.html page has been placed in a separate js file from the score page for ease of maintenance and readability -->
     <script src="./Develop/JS/gamelogic.js"></script>
 </body>
 
