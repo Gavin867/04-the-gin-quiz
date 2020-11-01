@@ -4,48 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="reset" href="./Develop/CSS/reset.css">
-    <link rel="stylesheet/text" href="./Develop/CSS/style.css">
-    <title>My Quiz</title>
+    <link href="./Develop/CSS/reset.css" rel="stylesheet" type="text/css">
+    <link href="./Develop/CSS/style.css" rel="stylesheet" type="text/css">
+    <title>It's Gin O'Clock!</title>
 </head>
 
 <body>
+    <header>
+        <!--Navgation Link to the high score page-->
+        <a href="./highscorepage.html" class="looks-like-button">View High Scores</a>
 
-    <div>
-        <!--Nav bar-->
-    </div>
+        <!--The timer-->
+        <div id="stop-clock">Time Remaining:<span id="timeLeft">0</span></div>
+    </header>
 
-    <button>Start</button>
+    <main>
+        <section id="welcome-page">
+            <div>
+                <h1>Welcome to the Gin Quiz!!!</h1>
 
-    <div id="question">
-        <div class="question">
-            <h2>
-                question
-            </h2>
-            <button></button>
-        </div>
+                <p> 
+                    Pip pip! Tally Ho! and Welcome to the quiz where we will test your knowledge on the favourite spirt of Her Majesty the Queen Elizbeth II. We are of course talking about Gin, the penultimate of alcoholic libation. The rules are simple: Upon clicking the 'Start' button you will have 100 seconds to match a series of recipes with the corresponding gin cocktail name. Incorrect anwers will receive a 10 second time penalty. Begin when ready! Huzzah! 
+                </p>
 
-        <div class="question active">
-        </div>
-    </div>
+                <button id="start-button">Start the Quiz</button>
+            </div>
 
-    <!--Put your initials in this div-->
-    <div id="store-your-score">
-        <h2>Congratulations you have finished!</h2>
+            <img src="./Assets/Gin O'Clock.png" alt="it's gin o'clock!">
+        </section>
 
-        <p>Your score is: <span id="player-score"></span></p>
+        <section id="the-quiz" class="hide">
+            <div class="question">
+                <h2>
+                    question
+                </h2>
+                <button></button>
+            </div>
 
-        <form> 
-            <p>Enter your initials here: <input id="initials-form" type="text" max="3"></p>
-            
-            <!--This button actually saves the high score/setItems-->
-            <button id="sbmt-int-btn">Submit</button>
-        </form>
+            <div class="question active">
+            </div>
+        </section>
 
-    </div>
+        <!--Put your initials in this section-->
+        <section id="store-your-score">
+            <h2>Congratulations you have finished!</h2>
+
+            <p>Your score is: <span id="player-score"></span></p>
+
+            <form>
+                <p>Enter your initials here: <input id="initials-form" type="text" max="3"></p>
+
+                <!--This button actually saves the high score/setItems-->
+                <button id="sbmt-int-btn">Submit</button>
+            </form>
+        </section>
+    </main>
 
 
-    
     <script src="./Develop/JS/gamelogic.js"></script>
 </body>
 
