@@ -20,7 +20,7 @@ var questions = [{
     answers: ["Tom Collins", "Gimlet", "Martini", "Aviation"],
     correctAnswer: 2
 }, {
-    question: "Name that cocktail: 2 oz London Dry Gin, 1 oz Lemon Juice, 3/4 oz Simple Syrup, build in a highball glass with ice, stir, top off with club soda and garnish with lemon slice",
+    question: "Name that cocktail: 2 oz London Dry Gin, 1 oz Lemon Juice, 3/4 oz simple syrup, build in a highball glass with ice, stir, top off with club soda and garnish with lemon slice",
     answers: ["Box Car", "Corpse Reviver No.2", "Gin Fizz", "Tom Collins"],
     correctAnswer: 3
 }, {
@@ -33,23 +33,23 @@ var questions = [{
     correctAnswer: 0
 }, {
     question: "Name that cocktail: 2 oz Gin, 1.5 oz Lime Cordial, shake with ice and strain into a cocktail glass, garnish wtih lime wedge",
-    answers: ["Gimlet", "", "", ""],
+    answers: ["Gimlet", "Zelli's Special", "Mortal Enemy", "Bitter French"],
     correctAnswer: 0
 }, {
-	question: "Name that cocktail: ",
-    answers: ["", "", "", "Vesper"],
+	question: "Name that cocktail: 'Three measures of Gordon's, one of vodka, half a measure of Kina Lillet. Shake it very well unitl it's ice-cold, then add a large, thin slice of lemon peel.'",
+    answers: ["Celine Fizz", "Strange Brew", "Martini", "Vesper"],
     correctAnswer: 3
 }, {
-	question: "Name that cocktail: ",
-    answers: ["Box Car", "", "", ""],
+	question: "Name that cocktail: 1.5 oz of London Dry Gin, 1/2 oz orange liqueur, 3/4 oz lime juice, 1 tsp grenadine, shake with ice and strain into a cocktail glass",
+    answers: ["Box Car", "Heart-Shaped Box", "Hyde Park Swizzle", "Le Bateleur"],
     correctAnswer: 0
 }, {
-	question: "Name that cocktail: ",
-    answers: ["", "French 75", "", ""],
+	question: "Name that cocktail: 1.5 oz London Dry Gin, 3/4 oz lemon juice, 2 tsp simple syrup, shake with ice and strain into a flute, top with chilled champagne",
+    answers: ["Ace Cocktail", "French 75", "The Commandant", "Monk's Respite"],
     correctAnswer: 1
 }, {
-	question: "Name that cocktail: ",
-    answers: ["", "", "Gin Fizz", ""],
+	question: "Name that cocktail: 2 oz London Dry Gin, 3/4 oz lemon juice, 3/4 oz simple syrup, egg white, shake with ice and strain into highball glass, top with club soda",
+    answers: ["Petticoat", "Tom Collins", "Gin Fizz", "Alembic"],
     correctAnswer: 2
 }, {
 	question: "Name that cocktail:",
@@ -57,24 +57,24 @@ var questions = [{
     correctAnswer: 3
 }, {
 	question: "Name that cocktail: ",
-    answers: ["", "", "", ""],
-    correctAnswer: 1
+    answers: ["", "", "Gin Rickey", ""],
+    correctAnswer: 2
 }, {
 	question: "Name that cocktail:",
-    answers: ["", "", "", ""],
+    answers: ["Gin Sling", "Singapore Sling", "", ""],
     correctAnswer: 0
 }, {
 	question: "Name that cocktail: ",
-    answers: ["", "", "", ""],
+    answers: ["", "Pink Elephant", "", ""],
     correctAnswer: 1
 }, {
 	question: "Name that cocktail:",
-    answers: ["", "", "", ""],
-    correctAnswer: 0
+    answers: ["", "", "Bee's Knees", ""],
+    correctAnswer: 2
 }, {
 	question: "Name that cocktail:",
-    answers: ["", "", "", ""],
-    correctAnswer: 0
+    answers: ["", "", "", "Delmonico No.1"],
+    correctAnswer: 3
 }];
 
 //Create buttons for questions
