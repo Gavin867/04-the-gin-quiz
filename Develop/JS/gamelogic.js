@@ -1,4 +1,8 @@
+//The timer
+var t
+
 //Create a start quiz button
+
 
 //Create a timer function that is activated when the start quiz button is clicked
 
