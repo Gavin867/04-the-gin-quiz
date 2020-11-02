@@ -102,11 +102,11 @@ var questions = [{
 
 
 
-
+// Set score variable just to test the logic on the submit initals and score form
 var practiceScore = 75
 
 
-
+// Logic for submitting initials at the end of the quiz
 var submitScoreBtn=document.getElementById("submitInitials");
 
 function savePlayerScoreInitials(event) {
