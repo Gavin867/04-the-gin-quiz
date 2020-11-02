@@ -1,21 +1,24 @@
 //The timer
 
-var time = 0;
+var time = 100;
+var score = 0;
+var currentQuestionIndex = 0
+var instructionsPageEl = document.getElementById("instructionsPage");
+var startButton = document.getElementById("startButton");
+var revealQuiz = document.getElementById("theQuiz");
+var questionDiv = document.getElementById("question");
+var answerAbutton = document.getElementById("answerA");
+var answerBbutton = document.getElementById("answerB");
+var answerCbutton = document.getElementById("answerC");
+var answerDbutton = document.getElementById("answerD");
+var timeLeftelement = document.getElementById("timeLeft");
+var revealInputPage = document.getElementById("storeScore");
+var submitScoreBtn=document.getElementById("submitInitials");
+var timerInterval; 
 
 
-
-//Create a start quiz button
-
-
-//Create a timer function that is activated when the start quiz button is clicked
-
-    //Create a function to take wrong answers and subtract 10 seconds
-
-//Create text modifier for the questions
-
-//Create text modifier for the answer options
-
-var questions = [{
+// Define Questions (Array of Objects)
+var questionsList = [{
     question: "The recipe: 1.5 oz London Dry Gin, 1.5 oz Dry Vermouth, 2 drops orange bitters, stir with ice, strain into cocktail glass, express lemon peel over beverage, garnish with olive or lemon twist",
     answers: ["Tom Collins", "Gimlet", "Martini", "Aviation"],
     correctAnswer: 2
@@ -92,34 +95,76 @@ var questions = [{
     // Correct answer: Delmonico No.1
 }];
 
+//Add functionality to the 'Start the Quiz' button
+function startTheQuiz(event) {
+    console.log("button-click");
+    instructionsPageEl.setAttribute("class", "hide");
+    revealQuiz.removeAttribute("class");
+    revealQuiz.setAttribute("class", "container");
+    displayQuestions();
+    timerInterval=setInterval(beginCountDown, 1000)
+}
+
+function beginCountDown() {
+    time--
+    timeLeftelement.textContent=time
+
+    if (time<=0) {
+        storeScore.removeAttribute("class");
+        //Stops timer at zero
+        clearInterval(timerInterval);
+        revealQuiz.setAttribute("class", "hide")
+    }
+}
+
+startButton.onclick = startTheQuiz
+
+function displayQuestions() {
+    var currentQuestion = questionsList[currentQuestionIndex];
+    console.log(currentQuestion);
+    questionDiv.textContent = currentQuestion.question;
+    answerAbutton.textContent = currentQuestion.answers[0];
+    answerBbutton.textContent = currentQuestion.answers[1];
+    answerCbutton.textContent = currentQuestion.answers[2];
+    answerDbutton.textContent = currentQuestion.answers[3];
+
+    //onclick event checkAnswer
+    answerAbutton.onclick = checkAnswer;
+    answerBbutton.onclick = checkAnswer;
+    answerCbutton.onclick = checkAnswer;
+    answerDbutton.onclick = checkAnswer;
+}
+
+//Check answer function
+function checkAnswer() {
+    //If buttonclick = correctAnswer score ++
+
+    //else time--10sec
+
+    // Move to next question
+    currentQuestionIndex++;
+    displayQuestions();
+}
+
+
+
+
+
+//Create text modifier for the answer options
+
+
+
 //Create buttons for questions
 
 //Create a function to count correct answers
 
-
-
-
-
-
-
-// Set score variable just to test the logic on the submit initals and score form
-var practiceScore = 75
-
-
-// Logic for submitting initials at the end of the quiz
-var submitScoreBtn=document.getElementById("submitInitials");
-
 function savePlayerScoreInitials(event) {
-    event.preventDefault ();
-
+    event.preventDefault();
     console.log("button-click");
-
     var playerInitials=document.getElementById("initialsForm");
-    
     console.log(playerInitials.value);
-
     var currentScore = {
-        score: practiceScore,
+        score: score,
         initals: playerInitials.value
     }
 
@@ -128,15 +173,15 @@ function savePlayerScoreInitials(event) {
     //getlocalStorageItem, new variable to hold value
     var highscores =
       JSON.parse(window.localStorage.getItem("high-score-list")) || [];
-
       //adding the new player score
       highscores.push(currentScore);
-
       //combiming old and new players scores and adding them to storage
-      localstorage.setItem("high-score-list", JSON.stringify(highscores));
+      window.localstorage.setItem("high-score-list", JSON.stringify(highscores));
 }
 
 submitScoreBtn.onclick=savePlayerScoreInitials;
+
+
 
 
 

@@ -15,12 +15,12 @@
         <a href="./highscorepage.html" class="looks-like-a-button">View High Scores</a>
 
         <!-- The countdoung timer, in seconds -->
-        <div id="stop-clock" class="timer-style">Time Remaining:<span id="timeLeft"> 0 </span></div>
+        <div id="timer" class="timer-style">Time Remaining:<span id="timeLeft"> 0 </span></div>
     </header>
 
     <main>
         <!-- Participants are presented with a welcome page and instructions upon entering the webpage -->
-        <section>
+        <section id="instructionsPage">
             <div class="container">
 
                 <h1 class="big-heading">Welcome to the Gin Quiz</h1>
@@ -41,15 +41,15 @@
             </div>
 
             <!-- A start button is provided to begin the countdown timer and cycle through the gamelogic functions revealing questions -->
-            <button id="start-button" class="button">Start the Quiz</button>
+            <button id="startButton" class="button">Start the Quiz</button>
 
             <img src="./Assets/Webpage-Images/god-save-the-queen.png" alt="It's gin o'clock! God save the Queen!">
         </section>
 
         <!-- Once the start button is click the gamelogic.js renders questions and answers -->
-        <section id="theQuiz" class="hide" class="container">
+        <section id="theQuiz" class="hide">
 
-            <div id="question" class="quiz-question"></div>
+            <div id="question" class="text"></div>
 
             <div id="answers">
                 
@@ -70,7 +70,7 @@
         </section>
 
         <!--Put your initials in this section-->
-        <section id="store-your-score" class="hide">
+        <section id="storeScore" class="hide">
 
             <h2>By Jove, you've done it! Absolutely spiffing, old chap!</h2>
 
