@@ -15,7 +15,7 @@
         <a href="./highscorepage.html" class="looks-like-a-button">View High Scores</a>
 
         <!-- The countdoung timer, in seconds -->
-        <div id="timer" class="timer-style">Time Remaining:<span id="timeLeft"> 0 </span></div>
+        <div id="timer" class="timer-style">Time Remaining:<span id="timeLeft"> 100 </span></div>
     </header>
 
     <main>
@@ -53,13 +53,13 @@
 
             <div id="answers">
                 
-                <button id="answerA" class="question-answer">a.</button>
+                <button id="answerA" class="button">a.</button>
 
-                <button id="answerB" class="question-answer">b.</button>
+                <button id="answerB" class="button">b.</button>
                 
-                <button id="answerC" class="question-answer">c.</button>
+                <button id="answerC" class="button">c.</button>
                 
-                <button id="answerD" class="question-answer">d.</button>
+                <button id="answerD" class="button">d.</button>
             
             </div>
 
@@ -72,11 +72,13 @@
         <!--Put your initials in this section-->
         <section id="storeScore" class="hide">
 
-            <h2>By Jove, you've done it! Absolutely spiffing, old chap!</h2>
+            <h2 class="small-heading">~ By Jove, you've done it! ~ </h2> 
+            
+            <h2>~ Absolutely spiffing, old chap! ~</h2>
 
-            <p>Your score is: <span id="player-score"></span></p>
+            <p class="text">Your score is: <span id="player-score"></span></p>
 
-            <form>
+            <form class="text">
                 <p>Inscribe monogram: <input id="initialsForm" type="text" max="3"></p>
 
                 <!--This button actually saves the high score/setItems-->
