@@ -127,12 +127,22 @@ function beginCountDown() {
     }
 }
 
+// The onlick event that will call the startTheQuiz function
 startButton.onclick = startTheQuiz
 
+// Function to display the list of questions
 function displayQuestions() {
+
+    // Define the current question as the question the question highlighted by the index "pointer"
     var currentQuestion = questionsList[currentQuestionIndex];
+
+    // Log the question selected from the array for display in console
     console.log(currentQuestion);
+
+    // Render selected question to question element in the html
     questionDiv.textContent = currentQuestion.question;
+
+    // Render corresponding question answers to buttons based on index
     answerAbutton.textContent = currentQuestion.answers[0];
     answerBbutton.textContent = currentQuestion.answers[1];
     answerCbutton.textContent = currentQuestion.answers[2];
@@ -149,7 +159,9 @@ function displayQuestions() {
 
 //Check answer function
 function checkAnswer() {
-    //If buttonclick = correctAnswer score ++
+
+    answerAbutton.onclick = getElementById
+    if 
 
     //else time--10sec
 
