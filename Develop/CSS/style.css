@@ -38,7 +38,6 @@ img {
 
 .big-heading {
     display: flex;
-    padding-top: .1%;
     padding-bottom: .5%;
     font-weight: bolder;
     font-size: 36pt;
@@ -66,10 +65,10 @@ img {
     height: fit-content;
     width: fit-content;
     margin-top: 1%;
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: .5%;
-    padding: .5%;
+    padding: 2%;
     border-radius: 5%;
     border: solid #3D034A;
 }
@@ -91,9 +90,10 @@ img {
 
 .text {
     display: block;
+    padding-top: .5%;
     padding-left: 7%;
     padding-right: 7%;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     font-size: 16pt;
     font-weight: bold;
     text-align: center;
@@ -116,10 +116,16 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-top: 1%;
     padding-bottom: .25%;
 }
 
 /* ID's in Alphabetical Order */
+#answers {
+    display: block;
+    width: 100%;
+}
+
 #clear-score-board {
     display: block;
     margin-left: auto;
@@ -141,4 +147,5 @@ img {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+
 
