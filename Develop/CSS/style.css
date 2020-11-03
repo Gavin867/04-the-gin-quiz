@@ -6,7 +6,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Element Selectors in Alphabetical Order */
 body {
     background-color: #E6F8F9;
 }
@@ -23,7 +22,6 @@ img {
     margin-top: .5%;
 }
 
-/* Classes in Alphabetical Order */
 .quiz-answer {
     display: block;
     width: 50%;
@@ -150,7 +148,19 @@ img {
     text-align: center;
 }
 
-/* ID's in Alphabetical Order */
+.store-container {
+    display: block;
+    background-color: whitesmoke;
+    height: 800px;
+    width: 70%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    border: solid #3D034A;
+    padding:5%;
+}
+
 #clear-score-board {
     display: block;
     margin-left: auto;

@@ -117,7 +117,7 @@ function beginCountDown() {
         storeScore.removeAttribute("class");
 
         // Apply the css styling to the store score page
-        storeScore.setAttribute("class", "container");
+        storeScore.setAttribute("class", "store-container");
         
         // Clear the timer
         clearInterval(timerInterval);
