@@ -24,6 +24,13 @@ img {
 }
 
 /* Classes in Alphabetical Order */
+.quiz-answer {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .bar {
     display: flex;
     justify-content: space-between;
@@ -120,12 +127,32 @@ img {
     padding-bottom: .25%;
 }
 
-/* ID's in Alphabetical Order */
-#answers {
+.question-container {
     display: block;
-    width: 100%;
+    background-color: whitesmoke;
+    height: 800px;
+    width: 70%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5%;
+    /* padding: 2%; */
+    border-radius: 5%;
+    border: solid #3D034A;
 }
 
+.question-text {
+    display: block;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ID's in Alphabetical Order */
 #clear-score-board {
     display: block;
     margin-left: auto;
@@ -147,5 +174,4 @@ img {
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
 

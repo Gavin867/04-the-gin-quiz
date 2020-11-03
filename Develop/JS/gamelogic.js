@@ -92,7 +92,7 @@ function startTheQuiz(event) {
     revealQuiz.removeAttribute("class");
 
     // Sets the css styling to the questions
-    revealQuiz.setAttribute("class", "container");
+    revealQuiz.setAttribute("class", "question-container ");
     
     // Display questions
     displayQuestions();
@@ -158,18 +158,7 @@ function checkAnswer() {
     displayQuestions();
 }
 
-
-
-
-
-//Create text modifier for the answer options
-
-
-
-//Create buttons for questions
-
-//Create a function to count correct answers
-
+//Create a function to store intials and score
 function savePlayerScoreInitials(event) {
     event.preventDefault();
     console.log("button-click");
