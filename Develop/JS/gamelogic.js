@@ -1,5 +1,5 @@
 // Define the global variables
-var time = 100;
+var time = 5;
 var score = 0;
 var currentQuestionIndex = 0
 var instructionsPageEl = document.getElementById("instructionsPage");
@@ -18,7 +18,7 @@ var timerInterval;
 
 // Define Questions (Array of Objects)
 var questionsList = [{
-    question: "1.5 oz London Dry Gin, 1.5 oz Dry Vermouth, 2 drops orange bitters, stir with ice, strain into cocktail glass, express lemon peel over beverage, garnish with olive or lemon twist",
+    question: "1.5 oz London dry gin, 1.5 oz Dry Vermouth, 2 drops orange bitters, stir with ice, strain into cocktail glass, express lemon peel over beverage, garnish with olive or lemon twist",
     answers: ["a. Tom Collins", "b. Gimlet", "c. Martini", "d. Aviation"],
     correctAnswer: 2
     // Correct answer: Martini
