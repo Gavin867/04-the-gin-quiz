@@ -159,6 +159,8 @@ function displayQuestions() {
     answerBbutton.onclick = checkAnswer;
     answerCbutton.onclick = checkAnswer;
     answerDbutton.onclick = checkAnswer;
+
+    console.log(currentQuestion.correctAnswer)
 }
 
 //Check answer function
