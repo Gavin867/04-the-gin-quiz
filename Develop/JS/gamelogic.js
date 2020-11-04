@@ -127,7 +127,7 @@ function beginCountDown() {
     }
 }
 
-// The onlick event that will call the startTheQuiz function
+// Tie the function which starts the quiz with the click event of the startButton
 startButton.onclick = startTheQuiz
 
 // Function to display the list of questions
@@ -148,23 +148,37 @@ function displayQuestions() {
     answerCbutton.textContent = currentQuestion.answers[2];
     answerDbutton.textContent = currentQuestion.answers[3];
 
-    //onclick event checkAnswer
+    // Onclick event checkAnswer
     answerAbutton.onclick = checkAnswer;
     answerBbutton.onclick = checkAnswer;
     answerCbutton.onclick = checkAnswer;
     answerDbutton.onclick = checkAnswer;
 
+    // Log the question's correct answer for display in console
     console.log(currentQuestion.correctAnswer)
 }
 
 //Check answer function
 function checkAnswer() {
+    
+    // clicked button logs correspending currentQuestion.aswer value as userChoice
+    
+    // if userChoice !== currentQuestion.correctAnswer 
 
-    answerAbutton.onclick = getElementById
-    if 
+        // removeAtrribute("class") to reveal "incorrect" message
 
-    //else time--10sec
+        // after 1sec of display setAttribute to hide again
 
+        // time --10sec
+    
+    // if userChoice === currentQuestion.correctAnswer
+
+        // removeAtrribute("class") to reveal "correct" message
+
+        // after 1sec of display setAttribute to hide again
+
+        // Score ++
+    
     // Move to next question
     currentQuestionIndex++;
     displayQuestions();
@@ -172,10 +186,20 @@ function checkAnswer() {
 
 //Create a function to store intials and score
 function savePlayerScoreInitials(event) {
+
+    // Prevent he page from refreshing and losing the data
     event.preventDefault();
+
+    // Register the button click
     console.log("button-click");
+
+    // Create a variable to use the input initials
     var playerInitials=document.getElementById("initialsForm");
+
+    // Log the form value for dislpay
     console.log(playerInitials.value);
+
+    // Display the player's score
     var currentScore = {
         score: score,
         initals: playerInitials.value
@@ -183,15 +207,20 @@ function savePlayerScoreInitials(event) {
 
     console.log(currentScore)
 
-    //getlocalStorageItem, new variable to hold value
+    // getlocalStorageItem, new variable to hold value
     var highscores =
+
+      // Retrieve the data from the DOM
       JSON.parse(window.localStorage.getItem("high-score-list")) || [];
+      
       //adding the new player score
       highscores.push(currentScore);
+      
       //combiming old and new players scores and adding them to storage
       window.localstorage.setItem("high-score-list", JSON.stringify(highscores));
 }
 
+// Connect the savePlayerScoreInitials function to a click event
 submitScoreBtn.onclick=savePlayerScoreInitials;
 
 
