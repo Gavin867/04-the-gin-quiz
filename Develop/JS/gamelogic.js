@@ -148,7 +148,7 @@ function displayQuestions() {
     answerCbutton.textContent = currentQuestion.answers[2];
     answerDbutton.textContent = currentQuestion.answers[3];
 
-    // Onclick event checkAnswer
+    // // // Onclick event checkAnswer
     answerAbutton.onclick = checkAnswer;
     answerBbutton.onclick = checkAnswer;
     answerCbutton.onclick = checkAnswer;
@@ -156,12 +156,16 @@ function displayQuestions() {
 
     // Log the question's correct answer for display in console
     console.log(currentQuestion.correctAnswer)
+
+    console.log(answerAbutton.onclick);
 }
 
 //Check answer function
 function checkAnswer() {
     
-    // clicked button logs correspending currentQuestion.aswer value as userChoice
+    // clicked button logs correspending currentQuestion.aswer value as userChoice   
+    // answerAbutton.onclick = getElementById(currentQuestion.answers[0].value);
+    
     
     // if userChoice !== currentQuestion.correctAnswer 
 
@@ -182,7 +186,10 @@ function checkAnswer() {
     // Move to next question
     currentQuestionIndex++;
     displayQuestions();
+
 }
+
+
 
 //Create a function to store intials and score
 function savePlayerScoreInitials(event) {
