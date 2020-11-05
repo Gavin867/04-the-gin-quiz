@@ -162,34 +162,24 @@ function displayQuestions() {
 
 //Check answer function
 function checkAnswer() {
-    
-    // clicked button logs correspending currentQuestion.aswer value as userChoice   
-    // answerAbutton.onclick = getElementById(currentQuestion.answers[0].value);
-    
-    
-    // if userChoice !== currentQuestion.correctAnswer 
-
+    console.log("user choice", this.textContent);
+    // clicked button logs correspending currentQuestion.aswer value as userChoice
+    if (this.textContent !== questionsList[currentQuestionIndex].correctAnswer ){
+        console.log("Incorrect answer")
         // removeAtrribute("class") to reveal "incorrect" message
-
         // after 1sec of display setAttribute to hide again
-
         // time --10sec
-    
-    // if userChoice === currentQuestion.correctAnswer
-
+    }
+    else if (this.textContent === questionsList[currentQuestionIndex].correctAnswer){
+        console.log("Correct answer")
         // removeAtrribute("class") to reveal "correct" message
-
         // after 1sec of display setAttribute to hide again
-
         // Score ++
-    
+    }
     // Move to next question
     currentQuestionIndex++;
     displayQuestions();
-
 }
-
-
 
 //Create a function to store intials and score
 function savePlayerScoreInitials(event) {
