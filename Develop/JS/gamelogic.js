@@ -156,9 +156,7 @@ function displayQuestions() {
     answerCbutton.onclick = checkAnswer;
     answerDbutton.onclick = checkAnswer;
 
-    // Log the question's correct answer for display in console
-    console.log(currentQuestion.correctAnswer)
-
+    // Log player response in the console
     console.log(answerAbutton.onclick);
 }
 
@@ -167,8 +165,9 @@ function checkAnswer() {
     console.log("user choice", this.textContent);
 
     // clicked button logs correspending currentQuestion.aswer value as userChoice
-    if (this.textContent !== questionsList[currentQuestionIndex].correctAnswer ){
-        console.log("Incorrect answer")
+    if (this.textContent !== questionsList[currentQuestionIndex].correctAnswer) {
+        // Show that the answer is incorrect in the console
+        console.log("Incorrect Answer")
     
         // removeAtrribute("class") to reveal "incorrect" message
         displayIncorrect.removeAttribute("class");
@@ -176,15 +175,24 @@ function checkAnswer() {
         // Add css styling to message
         displayIncorrect.setAttribute("class", "response");
 
+        // Message becomes hidden again after 1 second
         setTimeout(()=> {
             displayIncorrect.setAttribute("class", "hide")
         }, 1000);
 
+        // Subtract 10 second time penalty from time remaining
         time=time-10;
+
+        // Show message indicating the time penalty
+        console.log("-10 Second Time Penalty!")
+
+        // Show current player score in the console
+        console.log(score);
     }
 
-    else if (this.textContent === questionsList[currentQuestionIndex].correctAnswer){
-        console.log("Correct answer")
+    else if (this.textContent === questionsList[currentQuestionIndex].correctAnswer) {   
+        // Show that the answer is correct in the console
+        console.log("Correct Answer")
         
         // removeAtrribute("class") to reveal "correct" message
         displayCorrect.removeAttribute("class");
@@ -192,13 +200,18 @@ function checkAnswer() {
         // Add css styling to message
         displayCorrect.setAttribute("class", "response");
 
+        // Message becomes hidden again after 1 second
         setTimeout(()=> {
             displayCorrect.setAttribute("class", "hide")
         }, 1000);
         
-        //Add a point to the score
+        // Add a point to the score
         score++;
+
+        // Show current player score in the console
+        console.log(score);
     }
+
     // Move to next question
     currentQuestionIndex++;
     displayQuestions();
