@@ -40,7 +40,7 @@ var questionsList = [{
     answers: ["a. Gimlet", "b. Zelli's Special", "c. Mortal Enemy", "d. Bitter French"],
     correctAnswer: "a. Gimlet"
 }, {
-	question: "'Three measures of Gordon's, one of vodka, half a measure of Kina Lillet. Shake it very well unitl it's ice-cold, then add a large, thin slice of lemon peel.'",
+	question: "RECIPE: Three measures of Gordon's, one of vodka, half a measure of Kina Lillet. Shake it very well unitl it's ice-cold, then add a large, thin slice of lemon peel.",
     answers: ["a. Celine Fizz", "b. Strange Brew", "c. Martini", "d. Vesper"],
     correctAnswer: "d. Vesper"
 }, {
