@@ -10,6 +10,8 @@ var answerAbutton = document.getElementById("answerA");
 var answerBbutton = document.getElementById("answerB");
 var answerCbutton = document.getElementById("answerC");
 var answerDbutton = document.getElementById("answerD");
+var displayCorrect = document.getElementById("correct");
+var displayIncorrect = document.getElementById("incorrect");
 var timeLeftelement = document.getElementById("timeLeft");
 var revealInputPage = document.getElementById("storeScore");
 var submitScoreBtn = document.getElementById("submitInitials");
@@ -172,13 +174,15 @@ function checkAnswer() {
     
         // after 1sec of display setAttribute to hide again
     
-        // time --10sec
+        time=time-10;
     }
     else if (this.textContent === questionsList[currentQuestionIndex].correctAnswer){
         console.log("Correct answer")
         // removeAtrribute("class") to reveal "correct" message
         // after 1sec of display setAttribute to hide again
-        // Score ++
+        
+        //Add a point to the score
+        score++;
     }
     // Move to next question
     currentQuestionIndex++;
