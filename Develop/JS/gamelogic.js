@@ -171,11 +171,18 @@ function checkAnswer() {
         console.log("Incorrect answer")
     
         // removeAtrribute("class") to reveal "incorrect" message
-    
-        // after 1sec of display setAttribute to hide again
-    
+        displayIncorrect.removeAttribute("class");
+
+        // Add css styling to message
+        displayIncorrect.setAttribute("class", "response");
+
+        setTimeout(()=> {
+            displayIncorrect.setAttribute("class", "hide")
+        }, 1000);
+
         time=time-10;
     }
+    
     else if (this.textContent === questionsList[currentQuestionIndex].correctAnswer){
         console.log("Correct answer")
         // removeAtrribute("class") to reveal "correct" message

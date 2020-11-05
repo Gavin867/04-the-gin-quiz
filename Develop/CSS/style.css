@@ -180,6 +180,20 @@ img {
     font-size: 12pt;
 }
 
+.response {
+    display: flex;
+    font-weight: bolder;
+    color: #3D034A;
+    font-size: 20pt;
+    font-style: italic;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: .25%;
+}
+
 #clear-score-board {
     display: block;
     margin-left: auto;
