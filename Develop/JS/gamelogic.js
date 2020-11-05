@@ -163,11 +163,15 @@ function displayQuestions() {
 //Check answer function
 function checkAnswer() {
     console.log("user choice", this.textContent);
+
     // clicked button logs correspending currentQuestion.aswer value as userChoice
     if (this.textContent !== questionsList[currentQuestionIndex].correctAnswer ){
         console.log("Incorrect answer")
+    
         // removeAtrribute("class") to reveal "incorrect" message
+    
         // after 1sec of display setAttribute to hide again
+    
         // time --10sec
     }
     else if (this.textContent === questionsList[currentQuestionIndex].correctAnswer){
