@@ -182,11 +182,19 @@ function checkAnswer() {
 
         time=time-10;
     }
-    
+
     else if (this.textContent === questionsList[currentQuestionIndex].correctAnswer){
         console.log("Correct answer")
+        
         // removeAtrribute("class") to reveal "correct" message
-        // after 1sec of display setAttribute to hide again
+        displayCorrect.removeAttribute("class");
+
+        // Add css styling to message
+        displayCorrect.setAttribute("class", "response");
+
+        setTimeout(()=> {
+            displayCorrect.setAttribute("class", "hide")
+        }, 1000);
         
         //Add a point to the score
         score++;
