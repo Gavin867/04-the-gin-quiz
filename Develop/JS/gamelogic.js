@@ -13,6 +13,7 @@ var answerDbutton = document.getElementById("answerD");
 var displayCorrect = document.getElementById("correct");
 var displayIncorrect = document.getElementById("incorrect");
 var timeLeftelement = document.getElementById("timeLeft");
+var playerScoreEl = document.getElementById("playerScore");
 var revealInputPage = document.getElementById("storeScore");
 var submitScoreBtn = document.getElementById("submitInitials");
 var timerInterval; 
@@ -222,6 +223,9 @@ function savePlayerScoreInitials(event) {
 
     // Prevent he page from refreshing and losing the data
     event.preventDefault();
+
+    //display player's score
+    playerScoreEl.textContent= score + "/" + questionsList.length;
 
     // Register the button click
     console.log("button-click");
