@@ -179,7 +179,7 @@ function checkAnswer() {
         // Message becomes hidden again after 1 second
         setTimeout(()=> {
             displayIncorrect.setAttribute("class", "hide")
-        }, 1000);
+        }, 500);
 
         // Subtract 10 second time penalty from time remaining
         time=time-10;
@@ -204,7 +204,7 @@ function checkAnswer() {
         // Message becomes hidden again after 1 second
         setTimeout(()=> {
             displayCorrect.setAttribute("class", "hide")
-        }, 1000);
+        }, 500);
         
         // Add a point to the score
         score++;
