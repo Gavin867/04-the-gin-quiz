@@ -1,5 +1,5 @@
 // Define the global variables
-var time = 75;
+var time = 5;
 var score = 0;
 var currentQuestionIndex = 0
 var instructionsPageEl = document.getElementById("instructionsPage");
@@ -116,6 +116,8 @@ function beginCountDown() {
     // When the time runs out (i.e. reaches zero) do the following...
     if (time<=0) {
 
+        playerScoreEl.textContent= score + "/" + questionsList.length;
+
         // Remove the 'hide' css class to display the store score page
         storeScore.removeAttribute("class");
 
@@ -224,8 +226,8 @@ function savePlayerScoreInitials(event) {
     // Prevent he page from refreshing and losing the data
     event.preventDefault();
 
-    //display player's score
-    playerScoreEl.textContent= score + "/" + questionsList.length;
+    // //display player's score
+    // playerScoreEl.textContent= score + "/" + questionsList.length;
 
     // Register the button click
     console.log("button-click");
@@ -254,7 +256,7 @@ function savePlayerScoreInitials(event) {
       highscores.push(currentScore);
       
       //combiming old and new players scores and adding them to storage
-      window.localstorage.setItem("high-score-list", JSON.stringify(highscores));
+      window.localStorage.setItem("high-score-list", JSON.stringify(highscores));
 }
 
 // Connect the savePlayerScoreInitials function to a click event
