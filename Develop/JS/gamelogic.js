@@ -1,5 +1,5 @@
 // Define the global variables
-var time = 75;
+var time = 5;
 var score = 0;
 var currentQuestionIndex = 0
 var instructionsPageEl = document.getElementById("instructionsPage");
