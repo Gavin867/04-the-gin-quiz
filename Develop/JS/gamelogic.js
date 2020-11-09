@@ -260,9 +260,6 @@ function savePlayerScoreInitials(event) {
     // Prevent he page from refreshing and losing the data
     event.preventDefault();
 
-    // //display player's score
-    // playerScoreEl.textContent= score + "/" + questionsList.length;
-
     // Register the button click
     console.log("button-click");
 
@@ -272,25 +269,39 @@ function savePlayerScoreInitials(event) {
     // Log the form value for dislpay
     console.log(playerInitials.value);
 
-    // Display the player's score
-    var currentScore = {
-        score: score,
-        initals: playerInitials.value
+    // If player does not submit their intials prompt them to do so
+    if (playerInitials.value === "") {
+
+        // Alert displays message to input initials
+        alert("Please submit intials.");
     }
 
-    console.log(currentScore)
+    // If initials form is not empty or blank, then the player can save score
+    if (playerInitials.value !== "") {
 
-    // getlocalStorageItem, new variable to hold value
-    var highscores =
+        // Display the player's score
+        var currentScore = {
+            score: score,
+            initials: playerInitials.value
+        }
 
-        // Retrieve the data from the DOM
-        JSON.parse(window.localStorage.getItem("high-score-list")) || [];
+        console.log(currentScore)
 
-    //adding the new player score
-    highscores.push(currentScore);
+        // getlocalStorageItem, new variable to hold value
+        var highscores =
 
-    //combiming old and new players scores and adding them to storage
-    window.localStorage.setItem("high-score-list", JSON.stringify(highscores));
+            // Retrieve the data from the DOM
+            JSON.parse(window.localStorage.getItem("high-score-list")) || [];
+
+        // Adding the new player score
+        highscores.push(currentScore);
+
+        // Combiming old and new players scores and adding them to storage
+        window.localStorage.setItem("high-score-list", JSON.stringify(highscores));
+    
+        // Move to the highscore page   
+        window.location.href="./highscorepage.html";
+    }
 }
 
 // Connect the savePlayerScoreInitials function to a click event
