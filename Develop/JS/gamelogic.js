@@ -116,7 +116,7 @@ function beginCountDown() {
     // When the time runs out (i.e. reaches zero) do the following...
     if (time<=0) {
 
-        playerScoreEl.textContent= score + "/" + questionsList.length;
+        playerScoreEl.textContent = score + "/" + questionsList.length;
 
         // Remove the 'hide' css class to display the store score page
         storeScore.removeAttribute("class");
