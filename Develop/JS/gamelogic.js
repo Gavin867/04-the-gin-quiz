@@ -279,7 +279,7 @@ function savePlayerScoreInitials(event) {
     // If initials form is not empty or blank, then the player can save score
     if (playerInitials.value !== "") {
 
-        // Create a variable to which tells the browser what to place in local storage
+        // Create a currentScore object to which tells the browser what to place in local storage
         var currentScore = {
             score: score,
             initials: playerInitials.value
