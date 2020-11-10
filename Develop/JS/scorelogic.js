@@ -38,11 +38,6 @@ function clearScores() {
     // Clear the local storage
     window.localStorage.clear();
 
-    
-    // Loop through each of the created <li>
-    for (i = 0; i < highscores.length; i++) {
-        
-        printScores.remove();
-
-    }
+    // Reload the browser page and the lis are gone thanks to the printScores function above!
+    window.location.reload();
 }
