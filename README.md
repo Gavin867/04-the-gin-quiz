@@ -1,5 +1,5 @@
 # The Gin Quiz
-## A Javascript powered Multiple-Choice Quiz
+## A Javascript Powered Multiple-Choice Quiz
 
 ## Project Goals
 
