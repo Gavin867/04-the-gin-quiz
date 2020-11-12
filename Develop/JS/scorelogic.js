@@ -38,6 +38,6 @@ function clearScores() {
     // Clear the local storage
     window.localStorage.clear();
 
-    // Reload the browser page and the lis are gone thanks to the printScores function above!
-    window.location.reload();
+    // Remove the <ul> element from html
+    ulElement.remove();
 }
