@@ -25,7 +25,7 @@
 * [GitHub Repo](https://github.com/Gavin867/the-gin-quiz)
 * [Published Site](https://gavin867.github.io/the-gin-quiz/)
 
-![Start Menu]()
+![Start Menu](https://github.com/Gavin867/the-gin-quiz/blob/main/Assets/Readme-Images/Start%20Menu.gif)
 
 <!-- ## Lessons Learned
 
