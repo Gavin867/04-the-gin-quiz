@@ -20,12 +20,12 @@
         * User is presented with a button to clear the scores
         * User is presented with a link to the start of the quiz to play again
 
-<!-- ![Page example]() -->
-
 ## Project Location
 
 * [GitHub Repo](https://github.com/Gavin867/the-gin-quiz)
 * [Published Site](https://gavin867.github.io/the-gin-quiz/)
+
+![Start Menu]()
 
 <!-- ## Lessons Learned
 
