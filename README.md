@@ -25,28 +25,29 @@
 * [GitHub Repo](https://github.com/Gavin867/the-gin-quiz)
 * [Published Site](https://gavin867.github.io/the-gin-quiz/)
 
-![Start Menu](https://github.com/Gavin867/the-gin-quiz/blob/main/Assets/Readme-Images/Start%20Menu.gif)
+![Dynamic Text and CSS](https://github.com/Gavin867/the-gin-quiz/blob/main/Assets/Readme-Images/Dynamic%20CSS.gif)
 
-<!-- ## Lessons Learned
-
-#### Lesson
-
-* Stuff
-
-![Examples]()
+<!-- 
+## Lessons Learned
 
 #### Lesson
 
-* Stuff 
+* Stuff -->
 
-![Examples]()
+![Save Demo](https://github.com/Gavin867/the-gin-quiz/blob/main/Assets/Readme-Images/Save%20Demo.gif)
 
-#### Lesson
+<!-- #### Lesson
 
-* Stuff
+* Stuff  -->
 
-![Examples]()
+![Clear Function](https://github.com/Gavin867/the-gin-quiz/blob/main/Assets/Readme-Images/Clear%20Function.gif)
 
-## Parting Thoughts
+<!-- #### Lesson
+
+* Stuff -->
+<!-- 
+![Examples]() -->
+
+<!-- ## Parting Thoughts
 
 Stuff and things -->
