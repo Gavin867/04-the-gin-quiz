@@ -22,10 +22,12 @@
 
 ## Project Location
 
-* [GitHub Repo](https://github.com/Gavin867/the-gin-quiz)
-* [Published Site](https://gavin867.github.io/the-gin-quiz/)
+* [GitHub Repo](https://github.com/Gavin867/04-the-gin-quiz)
+* [Published Site](https://gavin867.github.io/04-the-gin-quiz/)
 
-![Dynamic Text and CSS](https://github.com/Gavin867/the-gin-quiz/blob/main/Assets/Readme-Images/Dynamic%20CSS.gif)
+## Dynamic Text and CSS
+
+![Dynamic Text and CSS](https://github.com/Gavin867/04-the-gin-quiz/blob/main/Assets/Images/Readme%20Images/Dynamic%20CSS.gif)
 
 <!-- 
 ## Lessons Learned
@@ -34,13 +36,17 @@
 
 * Stuff -->
 
-![Save Demo](https://github.com/Gavin867/the-gin-quiz/blob/main/Assets/Readme-Images/Save%20Demo.gif)
+## Local Storage Scoreboard
+
+![Save Demo](https://github.com/Gavin867/04-the-gin-quiz/blob/main/Assets/Images/Readme%20Images/Save%20Demo.gif)
 
 <!-- #### Lesson
 
 * Stuff  -->
 
-![Clear Function](https://github.com/Gavin867/the-gin-quiz/blob/main/Assets/Readme-Images/Clear%20Function.gif)
+## Clear Button Functionality
+
+![Clear Function](https://github.com/Gavin867/04-the-gin-quiz/blob/main/Assets/Images/Readme%20Images/Clear%20Function.gif)
 
 <!-- #### Lesson
 
