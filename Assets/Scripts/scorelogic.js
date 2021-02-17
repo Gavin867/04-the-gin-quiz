@@ -28,7 +28,7 @@ for (i = 0; i < highscores.length; i++) {
 
     // Console log each integer (aka value created by running the loop)
     console.log(highscores[i]);
-}
+};
 
 // Add functionality to the 'Clear All Scores' button
 clearAllScoresButton.onclick = clearScores;
@@ -40,4 +40,4 @@ function clearScores() {
 
     // Remove the <ul> element from html
     ulElement.remove();
-}
+};
