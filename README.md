@@ -23,7 +23,7 @@
 ## Project Location
 
 * [GitHub Repo](https://github.com/Gavin867/04-the-gin-quiz)
-* [Published Site](https://gavin867.github.io/04-the-gin-quiz/)
+* [Published Site](https://gavin867.github.io/The_Gin_Quiz/)
 
 ## Dynamic Text and CSS
 

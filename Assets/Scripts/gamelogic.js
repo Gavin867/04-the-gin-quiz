@@ -1,7 +1,7 @@
 // Define the global variables
 var time = 75;
 var score = 0;
-var currentQuestionIndex = 0
+var currentQuestionIndex = 0;
 var instructionsPageEl = document.getElementById("instructionsPage");
 var startButton = document.getElementById("startButton");
 var revealQuiz = document.getElementById("theQuiz");
@@ -102,13 +102,13 @@ function startTheQuiz(event) {
 
     // Begin the countdown on the timer
     timerInterval = setInterval(beginCountDown, 1000)
-}
+};
 
 // The countdown timer functionality
 function beginCountDown() {
 
     // Countdown by the interval indentified in timerInterval
-    time--
+    time--;
 
     // When the time runs out (i.e. reaches zero) do the following...
     if (time <= 0) {
@@ -129,15 +129,14 @@ function beginCountDown() {
 
         // Reapply 'hide' css class to make the quiz section invisible
         revealQuiz.setAttribute("class", "hide");
-    }
+    };
 
     // Display time left as a text value in the timer element of the html
-    timeLeftelement.textContent = time
-
-}
+    timeLeftelement.textContent = time;
+};
 
 // Tie the function which starts the quiz with the click event of the startButton
-startButton.onclick = startTheQuiz
+startButton.onclick = startTheQuiz;
 
 // Function to display the list of questions
 function displayQuestions() {
@@ -165,7 +164,7 @@ function displayQuestions() {
 
     // Log player response in the console
     console.log(answerAbutton.onclick);
-}
+};
 
 //Check answer function
 function checkAnswer() {
@@ -174,7 +173,7 @@ function checkAnswer() {
     // clicked button logs correspending currentQuestion.aswer value as userChoice
     if (this.textContent !== questionsList[currentQuestionIndex].correctAnswer) {
         // Show that the answer is incorrect in the console
-        console.log("Incorrect Answer")
+        console.log("Incorrect Answer");
 
         // removeAtrribute("class") to reveal "incorrect" message
         displayIncorrect.removeAttribute("class");
@@ -191,15 +190,14 @@ function checkAnswer() {
         time = time - 10;
 
         // Show message indicating the time penalty
-        console.log("-10 Second Time Penalty!")
+        console.log("-10 Second Time Penalty!");
 
         // Show current player score in the console
         console.log(score);
-    }
 
-    else if (this.textContent === questionsList[currentQuestionIndex].correctAnswer) {
+    } else if (this.textContent === questionsList[currentQuestionIndex].correctAnswer) {
         // Show that the answer is correct in the console
-        console.log("Correct Answer")
+        console.log("Correct Answer");
 
         // removeAtrribute("class") to reveal "correct" message
         displayCorrect.removeAttribute("class");
@@ -209,7 +207,7 @@ function checkAnswer() {
 
         // Message becomes hidden again after 1 second
         setTimeout(() => {
-            displayCorrect.setAttribute("class", "hide")
+            displayCorrect.setAttribute("class", "hide");
         }, 500);
 
         // Add a point to the score
@@ -217,7 +215,7 @@ function checkAnswer() {
 
         // Show current player score in the console
         console.log(score);
-    }
+    };
 
     // Move to next question
     currentQuestionIndex++;
@@ -243,16 +241,15 @@ function checkAnswer() {
         revealQuiz.setAttribute("class", "hide");
 
         // Display time left as a text value in the timer element of the html
-        timeLeftelement.textContent = time
-    }
+        timeLeftelement.textContent = time;
 
-    // If its not the last question, keep displaying the questions
-    else {
+        // If its not the last question, keep displaying the questions
+    } else {
 
         // Calls the displayQuestions function
         displayQuestions();
-    }
-}
+    };
+};
 
 //Create a function to store intials and score
 function savePlayerScoreInitials(event) {
@@ -274,19 +271,18 @@ function savePlayerScoreInitials(event) {
 
         // Alert displays message to input initials
         alert("Please submit intials.");
-    }
 
-    // If initials form is not empty or blank, then the player can save score
-    if (playerInitials.value !== "") {
+        // If initials form is not empty or blank, then the player can save score
+    } if (playerInitials.value !== "") {
 
         // Create a currentScore object to which tells the browser what to place in local storage
         var currentScore = {
             score: score,
             initials: playerInitials.value
-        }
+        };
 
         //Display currentScore in the console for viewing
-        console.log(currentScore)
+        console.log(currentScore);
 
         // getlocalStorageItem, new variable to hold value
         var highscores =
@@ -299,11 +295,11 @@ function savePlayerScoreInitials(event) {
 
         // Combiming old and new players scores and adding them to storage
         window.localStorage.setItem("high-score-list", JSON.stringify(highscores));
-    
+
         // Move to the highscore page   
-        window.location.href="./highscorepage.html";
-    }
-}
+        window.location.href = "./highscorepage.html";
+    };
+};
 
 // Connect the savePlayerScoreInitials function to a click event
 submitScoreBtn.onclick = savePlayerScoreInitials;
